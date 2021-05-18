@@ -11,9 +11,6 @@ To spend more time on coding your project, use the README generator to create yo
  - [Usage](#usage)
  - [License](#license)
  - [Features](#features)
- - [Credits](#credits)
- - [Contributing](#contributing)
- - [Tests](#tests)
  - [Questions](#questions)
 
 
