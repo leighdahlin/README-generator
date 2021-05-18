@@ -1,10 +1,10 @@
-// TODO: Include packages needed for this application
+// Using the inquirer npm package
+// fs is a Node standard library package for reading and writing files
 
 const inquirer = require("inquirer");
 const fs = require("fs");
-let responsesToQs  = {};
 
-// TODO: Create an array of questions for user input
+//user input user to generate README
 const basicQuestions = () => {
     return inquirer.prompt([
         {
@@ -94,12 +94,15 @@ const basicQuestions = () => {
     ])
 
     .then((data) =>{
-    
+        
+        //uses the title the user input to create a file name that's lowercase and joins any words togther without a space
         const filename = `${data.title.toLowerCase().split(' ').join('')}.md`;
+
+        //converts the data to a string
         JSON.stringify(data, null, '\t')
 
-        // license(data);
-
+        //the filename generated above is used to name the file
+        //the data is use in the generateREADME function which takes in the arguments data(from prompts), licenseBadge function and licenseText function
         fs.writeFile(filename,generateREADME(data,licenseBadge(data),licenseText(data)), (err) =>
         err ? console.log(data) : console.log('Success!')
         );
@@ -107,8 +110,8 @@ const basicQuestions = () => {
         
 };
 
+//template for README text, the license badge and text are pulled from the licenseBadge function and licenseText function
 generateREADME = (answers, badge, license) =>
-
 `
 ${badge}
 
@@ -151,9 +154,12 @@ ${answers.contributing}
 ${answers.testing}
 
 ## Questions
+If you have any questions, please use the contact information below:
 https://github.com/${answers.username}  
 ${answers.email}
 `
+
+//based on the license selected by the user, returns the badge for the selected license
 function licenseBadge(answers) {
 
     switch(answers.license) {
@@ -172,6 +178,7 @@ function licenseBadge(answers) {
     }
 }
 
+//based on the license selected by the user, returns the license text for the selected license
 function licenseText(answers) {
 
     switch(answers.license) {
@@ -190,14 +197,7 @@ function licenseText(answers) {
     }
 }
 
-
-
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {
-    console.log(data);
-}
-
-// TODO: Create a function to initialize app
+// Initialize function
 function init() {
     basicQuestions();
         
