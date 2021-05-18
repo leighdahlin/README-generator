@@ -71,12 +71,6 @@ const basicQuestions = () => {
             message:"What are the features of the project?"
         },
         {
-            type: 'list',
-            name: 'license',
-            message: 'Choose your license',
-            choices: ['MIT','GNU GPLv3','Apache']
-        },
-        {
             type: 'input',
             name: 'credits',
             message: "List any collaborators of the project."
@@ -90,6 +84,12 @@ const basicQuestions = () => {
             type: 'input',
             name: 'testing',
             message: "What are instructions for testing your project?"
+        },
+        {
+            type: 'list',
+            name: 'license',
+            message: 'Choose your license',
+            choices: ['MIT','GNU GPLv3','Apache']
         },
     ])
 
@@ -124,11 +124,11 @@ ${answers.description}
 
  - [Installation](#installation)
  - [Usage](#usage)
- - [License](#license)
  - [Features](#features)
  - [Credits](#credits)
  - [Contributing](#contributing)
  - [Tests](#tests)
+ - [License](#license)
  - [Questions](#questions)
 
 
@@ -137,9 +137,6 @@ ${answers.installation}
 
 ## Usage
 ${answers.usage}
-
-## License
-${license}
 
 ## Features
 ${answers.features}
@@ -152,6 +149,9 @@ ${answers.contributing}
 
 ## Tests
 ${answers.testing}
+
+## License
+${license}
 
 ## Questions
 If you have any questions, please use the contact information below:
