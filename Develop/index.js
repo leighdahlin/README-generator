@@ -103,7 +103,7 @@ const basicQuestions = () => {
 
         //the filename generated above is used to name the file
         //the data is use in the generateREADME function which takes in the arguments data(from prompts), licenseBadge function and licenseText function
-        fs.writeFile(filename,generateREADME(data,licenseBadge(data),licenseText(data)), (err) =>
+        fs.writeFile(filename,generateREADME(data,licenseBadge(data)), (err) =>
         err ? console.log(data) : console.log('Success!')
         );
     });
@@ -111,7 +111,7 @@ const basicQuestions = () => {
 };
 
 //template for README text, the license badge and text are pulled from the licenseBadge function and licenseText function
-generateREADME = (answers, badge, license) =>
+generateREADME = (answers, badge) =>
 `
 ${badge}
 
@@ -151,7 +151,7 @@ ${answers.contributing}
 ${answers.testing}
 
 ## License
-${license}
+This project is licensed under the ${answers.license} license.
 
 ## Questions
 If you have any questions, please use the contact information below:
@@ -174,25 +174,6 @@ function licenseBadge(answers) {
         case 'Apache':
             let badgeApache =  "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)"
             return badgeApache;
-            break;
-    }
-}
-
-//based on the license selected by the user, returns the license text for the selected license
-function licenseText(answers) {
-
-    switch(answers.license) {
-        case 'MIT':
-            let licenseMIT = "MIT license"
-            return licenseMIT;
-            break;
-        case 'GNU GPLv3':
-            let licenseGNU = "GNU GPLv3 license"
-            return licenseGNU;
-            break;
-        case 'Apache':
-            let licenseApache =  "Apache license"
-            return licenseApache;
             break;
     }
 }
