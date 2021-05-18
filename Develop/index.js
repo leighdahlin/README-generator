@@ -119,14 +119,14 @@ ${answers.description}
 
 ## Table of Contents
 
- - [Installatio] (#installation)
- - [Usage] (#usage)
- - [License] (#license)
- - [Features] (#features)
- - [Credits] (#credits)
- - [Contributing] (#contributing)
- - [Tests] (#tests)
- - [Questions] (#questions)
+ - [Installation](#installation)
+ - [Usage](#usage)
+ - [License](#license)
+ - [Features](#features)
+ - [Credits](#credits)
+ - [Contributing](#contributing)
+ - [Tests](#tests)
+ - [Questions](#questions)
 
 
 ## Installation
@@ -135,24 +135,24 @@ ${answers.installation}
 ## Usage
 ${answers.usage}
 
-# License
+## License
 ${license}
 
 ## Features
 ${answers.features}
 
-# Credits
+## Credits
 ${answers.credits}
 
-# Contributing
+## Contributing
 ${answers.contributing}
 
-# Tests
+## Tests
 ${answers.testing}
 
-# Questions
-https://github.com/${answers.username}
-${answers.email}
+## Questions
+[Github] : https://github.com/${answers.username}  
+[Email} : ${answers.email}
 `
 function licenseBadge(answers) {
 
