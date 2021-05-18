@@ -40,5 +40,5 @@ none
 none
 
 ## Questions
-[Github] : https://github.com/leighdahlin  
-[Email} : leighdahlin@gmail.com
+https://github.com/leighdahlin  
+leighdahlin@gmail.com

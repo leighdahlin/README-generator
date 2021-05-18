@@ -151,8 +151,8 @@ ${answers.contributing}
 ${answers.testing}
 
 ## Questions
-[Github] : https://github.com/${answers.username}  
-[Email} : ${answers.email}
+https://github.com/${answers.username}  
+${answers.email}
 `
 function licenseBadge(answers) {
 
