@@ -154,7 +154,7 @@ ${answers.testing}
 This project is licensed under the ${answers.license} license.
 
 ## Questions
-If you have any questions, please use the contact information below:
+If you have any questions, please use the contact information below:  
 https://github.com/${answers.username}  
 ${answers.email}
 `
