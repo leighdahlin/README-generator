@@ -1,10 +1,10 @@
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
-# README generator
+# README Generator
 
 ## Description
-generates README files
+Generator for high-quality README files
 
 ## Table of Contents
 
@@ -19,27 +19,27 @@ generates README files
 
 
 ## Installation
-Install node.js and inquirer npm before running
+Install node.js and npm inquirer package
 
 ## Usage
-Use to generate README files
+Follow the gif below for instructions
 
 ## Features
-Features prompts to generate READMEs
+Features node.js and inquirer
 
 ## Credits
-No collabs
+n/a
 
 ## Contributing
-No guidelines
+n/a
 
 ## Tests
-Use video to test
+n/a
 
 ## License
-This project is licensed under the MIT license.
+This project is licensed under the Apache license.
 
 ## Questions
-If you have any questions, please use the contact information below:
+If you have any questions, please use the contact information below:  
 https://github.com/leighdahlin  
 leigh.dahlin@gmail.com
